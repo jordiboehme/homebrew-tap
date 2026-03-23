@@ -1,6 +1,6 @@
 cask "ahpushit" do
-  version "1.3.7"
-  sha256 "6d239a80fac1e472b0b7e70b1082e6ebae548ff39444e3ffbb2d43759fe8cc37"
+  version "1.4.0"
+  sha256 "d31a719ad28c1199a6cfd50efd2a08dee5896fca6f78b0e2ad86038610d5b34e"
 
   url "https://github.com/jordiboehme/AhPushIt/releases/download/v#{version}/AhPushIt-#{version}.dmg"
   name "AhPushIt"
