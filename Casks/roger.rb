@@ -1,6 +1,6 @@
 cask "roger" do
-  version "0.3.1"
-  sha256 "6d2b9bc84ed0cc77ccf46aca251f62cd66a630f9ddab507edfc63e6aae641d14"
+  version "0.3.2"
+  sha256 "28c85d83ab81b08610b6705d356de3ae41d2e4fec26e19738aa1fc5b1317f7d8"
 
   url "https://github.com/jordiboehme/roger/releases/download/v#{version}/Roger-#{version}.dmg"
   name "Roger"
@@ -10,6 +10,13 @@ cask "roger" do
   depends_on macos: ">= :sonoma"
 
   app "Roger.app"
+
+  postflight do
+    system_command "/usr/bin/open",
+                   args: ["-gj", "#{appdir}/Roger.app"]
+  end
+
+  uninstall quit: "com.jordiboehme.roger"
 
   zap trash: [
     "~/Library/Preferences/com.jordiboehme.roger.plist",
