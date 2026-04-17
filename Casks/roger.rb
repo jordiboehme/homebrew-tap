@@ -1,6 +1,6 @@
 cask "roger" do
   version "0.7.0"
-  sha256 "00dfd6ccf60ae64d663b7ab5dc41e0745630dcbee0d58576d345e3249b624260"
+  sha256 "d862b9906883eb4052de7b0c9fefb07d78169c32412b73e4608246666e04583e"
 
   url "https://github.com/jordiboehme/roger/releases/download/v#{version}/Roger-#{version}.dmg"
   name "Roger"
@@ -13,7 +13,7 @@ cask "roger" do
 
   postflight do
     system_command "/usr/bin/open",
-                   args: ["-gj", "#{appdir}/Roger.app"]
+                   args: ["-g", "#{appdir}/Roger.app"]
   end
 
   uninstall quit: "com.jordiboehme.roger"
