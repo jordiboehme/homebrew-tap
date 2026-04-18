@@ -1,6 +1,6 @@
 cask "roger" do
-  version "0.7.2"
-  sha256 "f416df36466072ed316dd329cf3c2d000e19dd3d95eed2fe507f167785902aab"
+  version "0.8.0"
+  sha256 "b8e52d027ac85bc982d53c7973a9e78bd42a77652f91f9d0f6ed60016262c771"
 
   url "https://github.com/jordiboehme/roger/releases/download/v#{version}/Roger-#{version}.dmg"
   name "Roger"
