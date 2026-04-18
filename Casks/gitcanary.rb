@@ -1,6 +1,6 @@
 cask "gitcanary" do
-  version "1.2.2"
-  sha256 "5dcf7b8725d84fcaecf867574945fd12853082d0cf47f66d1074a6ad35a80d31"
+  version "1.2.3"
+  sha256 "73c5cdae44be100da69e681232f270d87502ab3c55c308d58de6a4551e66e8c1"
 
   url "https://github.com/jordiboehme/GitCanary/releases/download/v#{version}/GitCanary-#{version}.dmg"
   name "GitCanary"
@@ -13,7 +13,7 @@ cask "gitcanary" do
 
   postflight do
     system_command "/usr/bin/open",
-                   args: ["-gj", "#{appdir}/GitCanary.app"]
+                   args: ["-g", "#{appdir}/GitCanary.app"]
   end
 
   uninstall quit: "com.jordiboehme.GitCanary"
