@@ -1,6 +1,6 @@
 cask "gitcanary" do
-  version "1.6.1"
-  sha256 "116ca61e4f894c5722d7ca409ed8e7e3f210d4bc065c65ac8462a01ef67fdcd8"
+  version "1.6.2"
+  sha256 "6534fcd8ea6c008ac86a12c4168afb5899fdcde7631d961e66ef8143811e7a48"
 
   url "https://github.com/jordiboehme/GitCanary/releases/download/v#{version}/GitCanary-#{version}.dmg"
   name "GitCanary"
