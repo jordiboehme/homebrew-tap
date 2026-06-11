@@ -7,7 +7,7 @@ cask "roger" do
   desc "macOS menu bar app for speech-to-text dictation into any application"
   homepage "https://github.com/jordiboehme/roger"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Roger.app"
 
