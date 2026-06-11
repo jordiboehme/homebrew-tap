@@ -7,7 +7,7 @@ cask "ahpushit" do
   desc "macOS menu bar app that forwards notifications to external services"
   homepage "https://github.com/jordiboehme/AhPushIt"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "AhPushIt.app"
 
