@@ -2,24 +2,24 @@ class Crystalline < Formula
   desc "Local-first knowledge management for humans and AI agents"
   homepage "https://github.com/jordiboehme/crystalline"
   license "AGPL-3.0-or-later"
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-macos-arm64.tar.gz"
-      sha256 "977da7301fbb2a91ac5f332cabb350528a60f1e156f40431cce827f996a7cf97"
+      sha256 "f4ec29ed23ac354101a69f63ee17283244879430f495594e551df68b4c17ee85"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-linux-amd64.tar.gz"
-      sha256 "9ca22689bcc5effb7c69c6f6354ab1746d45c909c44d223f0c09570964108a8b"
+      sha256 "bd722c591bafa67754f365d7d205a61840a66d114a36ab82e7317980d3487cdd"
     end
 
     on_arm do
       url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-linux-arm64.tar.gz"
-      sha256 "9407a488a41f6432026978b8a151e914d10661228a69aab5f80393d15b1da20b"
+      sha256 "aac6af7472835bc16f7c92cbd45940c4588c2f8a53f4e4db9d7bddc3bccfefe6"
     end
   end
 
