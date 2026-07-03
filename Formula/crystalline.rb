@@ -6,20 +6,20 @@ class Crystalline < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "abef491caa42758e74390ca0ed4828113033e074a826b984f29d5486e77f49aa"
+      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-macos-arm64.tar.gz"
+      sha256 "c76de5cc9d8877bb12f29990d842a7ef9a3d9a5f3711c254ec804864051fb603"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "eb9d7d9fdb7af44b79c1813adb1a50eafd578a2097815bdaaafb79e1679afb62"
+      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-linux-amd64.tar.gz"
+      sha256 "0a0d174c752a23cbb8a47a2cb5e68f243bd90401d4da1dbde0fbe01642993640"
     end
 
     on_arm do
-      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "165f9baee425caa1af51fa91f2e1f7400b5649bdd4f23c8d6eb187caccf0bf9d"
+      url "https://github.com/jordiboehme/crystalline/releases/download/v#{version}/crystalline-v#{version}-linux-arm64.tar.gz"
+      sha256 "14a72f9479ea44c19c0b05ef1fb638ca54980bb5264071f48e5ecf4ed899d4a5"
     end
   end
 
