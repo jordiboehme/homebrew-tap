@@ -2,29 +2,29 @@ class CrosspointConvert < Formula
   desc "Convert any EPUB or Markdown into an EPUB your Xteink X4 renders beautifully"
   homepage "https://github.com/jordiboehme/crosspoint-convert"
   license "MIT"
-  version "0.1.0"
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/crosspoint-convert/releases/download/v#{version}/crosspoint-convert-v#{version}-macos-arm64.tar.gz"
-      sha256 "ac699a412f09f09186d412378df8ce0022ce2297178691830e8ef64ea82f22f6"
+      sha256 "ef0bae41852cb4fc83fd2d6216bcd6110ae6551d83964dc2be8db76eb9a56568"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/crosspoint-convert/releases/download/v#{version}/crosspoint-convert-v#{version}-macos-amd64.tar.gz"
-      sha256 "364e1c7829a1d55ecea1057b95e772a9ca4776eb1681ff4e799b3513a56ccba5"
+      sha256 "bac0b25888fd61acae51903724cc915d1435275a7168c25500a8521e41933407"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jordiboehme/crosspoint-convert/releases/download/v#{version}/crosspoint-convert-v#{version}-linux-arm64.tar.gz"
-      sha256 "792d9f2fe71ade26df3262f7eca7d9f52ce9260ccb06a61a42505191bdf5ccbb"
+      sha256 "a7d6e12c805c8eb91c5b039410ef93c62006ce0f7436b6e7bdc51ef2ba3e6e7a"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/crosspoint-convert/releases/download/v#{version}/crosspoint-convert-v#{version}-linux-amd64.tar.gz"
-      sha256 "2837691e7603203e2b15ccf0cf1d6788fa68f3ebf894de3c12081d8bd3a14e09"
+      sha256 "ecd2f1e7596936cdc8b8a1d81187919da1edd4475e2ff76d388ba14e2e32ee91"
     end
   end
 
