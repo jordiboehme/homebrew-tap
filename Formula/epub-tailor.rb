@@ -2,29 +2,29 @@ class EpubTailor < Formula
   desc "Clean, fix and tailor EPUB books to fit your e-reader"
   homepage "https://github.com/jordiboehme/epub-tailor"
   license "MIT"
-  version "0.4.1"
+  version "0.4.2"
 
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-macos-arm64.tar.gz"
-      sha256 "82ceacac4f9955901b1f3121870dcadcef207dd6b642f4d26c79b32bdb052c9b"
+      sha256 "2897bf0d160d83a054f6ca22513f439ef7663c0ab6369a1c0c638c7a29fe46f6"
     end
 
     on_intel do
-      url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-macos-amd64.tar.gz"
-      sha256 "1f49976a0f06f4ec77c352c3645f726e16a5e734410b691c7752839d62a361c7"
+      url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-macos-intel.tar.gz"
+      sha256 "76150313171f961bbee7969fd7f84426d2aade39e5ee1c2a33b24a7d0dd40222"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-linux-arm64.tar.gz"
-      sha256 "709797c68e0ae9492101f48ed6c6407f998d4fb73e3707b63582d10104d60c27"
+      sha256 "5015d2d27eec4221eeff5dc8a18f5b8d7c4f5e5bccaae8c215967b222dab7de9"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-linux-amd64.tar.gz"
-      sha256 "c8456f66ca2f2cf8b488ba8d33fb7ed80d8a44d34859d89ef96093c2b9a8b506"
+      sha256 "c17574eefb9685fe481cc1e4b58602ed4d7e634e94390977b906dabab2f8feed"
     end
   end
 
