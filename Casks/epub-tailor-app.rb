@@ -18,7 +18,7 @@ cask "epub-tailor-app" do
   homepage "https://github.com/jordiboehme/epub-tailor"
 
   auto_updates true
-  depends_on macos: ">= :catalina"
+  depends_on macos: :catalina
 
   app "EPUB Tailor.app"
 
