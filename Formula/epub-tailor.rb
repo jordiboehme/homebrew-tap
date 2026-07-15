@@ -7,24 +7,24 @@ class EpubTailor < Formula
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-macos-arm64.tar.gz"
-      sha256 "2bbcb4e6d3191fca800b416ad115fa352d7e7f2bae1a084306d39f72b5aa06f2"
+      sha256 "295e355f9c1d343cd0be4552a425e306b912aa631af38326907b54cd4f5c2f4a"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-macos-intel.tar.gz"
-      sha256 "20f10546c245655aa361b07a330d70abd7ba8d6f6031945b633707bf85c00a5e"
+      sha256 "72be9b8deddfaa9173dcccc0b8cb0f3b6f918b5556191da1130cfadf4462e923"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-linux-arm64.tar.gz"
-      sha256 "8f2a0f3c0287fccde8a46ec3d98c7234006453facfc60fcbbf7ae6b025e4bb2a"
+      sha256 "341044026e6148b2ef0d8559b4122eaba661e9b398dd500528c366d18b55b73a"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/epub-tailor-v#{version}-linux-amd64.tar.gz"
-      sha256 "34e636bb30c916297315d189958fe76bc1b2ac19ac0700b362c5cfe45050e96e"
+      sha256 "285c10fb3afa3d7f2493ebe41a3d3c1f3ca29b84e798e7501e273952fdc8d1c1"
     end
   end
 
