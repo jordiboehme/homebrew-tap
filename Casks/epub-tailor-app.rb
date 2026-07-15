@@ -1,14 +1,14 @@
 cask "epub-tailor-app" do
-  version "0.6.0"
+  version "0.6.1"
 
   on_arm do
-    sha256 "87cc46252c514ca688be105a0f78f45bb983813f986e19123208d6de76165996"
+    sha256 "66a87bf95017b5910d4f2b3e60890163d35dc385c32caf1893b994486f974922"
 
     url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/EPUB-Tailor-v#{version}-macos-arm64.dmg"
   end
 
   on_intel do
-    sha256 "1006567710b3690580f65e49dfc75b7aac1ecf919675f81e473b31c5ada36a71"
+    sha256 "6e2af93b39cf19aa2b0020f319a6d1073d3f32436fd4028ef47c708fdab7daed"
 
     url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/EPUB-Tailor-v#{version}-macos-intel.dmg"
   end
