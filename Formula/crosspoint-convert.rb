@@ -1,8 +1,13 @@
 class CrosspointConvert < Formula
   desc "Convert any EPUB or Markdown into an EPUB your Xteink X4 renders beautifully"
   homepage "https://github.com/jordiboehme/crosspoint-convert"
-  license "MIT"
   version "0.2.2"
+  license "MIT"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do

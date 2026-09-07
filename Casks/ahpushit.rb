@@ -7,11 +7,14 @@ cask "ahpushit" do
   desc "macOS menu bar app that forwards notifications to external services"
   homepage "https://github.com/jordiboehme/AhPushIt"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on macos: :sonoma
 
   app "AhPushIt.app"
 
-  zap trash: [
-    "~/Library/Preferences/com.jordiboehme.AhPushIt.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.jordiboehme.AhPushIt.plist"
 end

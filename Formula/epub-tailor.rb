@@ -1,8 +1,13 @@
 class EpubTailor < Formula
   desc "Clean, fix and tailor EPUB books to fit your e-reader"
   homepage "https://github.com/jordiboehme/epub-tailor"
-  license "MIT"
   version "0.9.0"
+  license "MIT"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do

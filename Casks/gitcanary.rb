@@ -7,20 +7,22 @@ cask "gitcanary" do
   desc "macOS menu bar app that monitors git repos and provides AI-generated summaries of remote changes"
   homepage "https://github.com/jordiboehme/GitCanary"
 
+  livecheck do
+    url :url
+    strategy :github_latest
+  end
+
   depends_on macos: :sonoma
 
   app "GitCanary.app"
 
+  postflight_steps do
+    run "/bin/sleep", args: ["1"]
+    run "/usr/bin/open", args: ["-g", "{{appdir}}/GitCanary.app"]
+  end
+
   uninstall quit:   "com.jordiboehme.GitCanary",
             signal: ["TERM", "com.jordiboehme.GitCanary"]
 
-  postflight do
-    sleep 1
-    system_command "/usr/bin/open",
-                   args: ["-g", "#{appdir}/GitCanary.app"]
-  end
-
-  zap trash: [
-    "~/Library/Preferences/com.jordiboehme.GitCanary.plist",
-  ]
+  zap trash: "~/Library/Preferences/com.jordiboehme.GitCanary.plist"
 end

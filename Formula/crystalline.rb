@@ -1,8 +1,13 @@
 class Crystalline < Formula
   desc "Local-first knowledge management for humans and AI agents"
   homepage "https://github.com/jordiboehme/crystalline"
-  license "AGPL-3.0-or-later"
   version "0.17.0"
+  license "AGPL-3.0-or-later"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do

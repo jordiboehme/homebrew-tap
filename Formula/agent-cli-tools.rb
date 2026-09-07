@@ -1,8 +1,13 @@
 class AgentCliTools < Formula
-  desc "The missing CLI commands for agent harnesses"
+  desc "Missing CLI commands for agent harnesses"
   homepage "https://github.com/jordiboehme/agent-cli-tools"
-  license "MIT"
   version "0.1.0"
+  license "MIT"
+
+  livecheck do
+    url :stable
+    strategy :github_latest
+  end
 
   on_macos do
     on_arm do
