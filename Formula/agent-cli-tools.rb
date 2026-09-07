@@ -1,32 +1,29 @@
 class AgentCliTools < Formula
-  desc "Missing CLI commands for agent harnesses"
+  desc "The missing CLI commands for agent harnesses"
   homepage "https://github.com/jordiboehme/agent-cli-tools"
-  version "0.1.0"
   license "MIT"
-
-  livecheck do
-    url :stable
-    strategy :github_latest
-  end
+  version "0.2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/agent-cli-tools/releases/download/v#{version}/agent-cli-tools-v#{version}-macos-arm64.tar.gz"
-      sha256 "cef9d223ee9c684509dc9ddec1b00070cd901846aa6ab1754536f93ceb0873a2"
+      sha256 "ffcfe39ff22bc98f930a21c17dd032f56d0235912d29eea1385a3facbf0775e9"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/agent-cli-tools/releases/download/v#{version}/agent-cli-tools-v#{version}-macos-intel.tar.gz"
-      sha256 "34813bab397593eda1ff267a989e319210430c00e5a687f9549efc7ed012cbe6"
+      sha256 "e37264004b9322e9b32c172d0bcbd368403b7ef998c5ab6645c119b7e85d318c"
     end
   end
 
   def install
-    bin.install "timeout"
+    bin.install "timeout", "nproc", "tac", "pidof", "watch", "tree"
   end
 
   test do
     assert_match version.to_s, shell_output("#{bin}/timeout --version")
     shell_output("#{bin}/timeout 0.1 sleep 5", 124)
+    assert_match(/\A\d+\Z/, shell_output("#{bin}/nproc").strip)
+    assert_equal "b\na\n", pipe_output("#{bin}/tac", "a\nb\n")
   end
 end
