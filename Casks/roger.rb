@@ -4,7 +4,7 @@ cask "roger" do
 
   url "https://github.com/jordiboehme/roger/releases/download/v#{version}/Roger-#{version}.dmg"
   name "Roger"
-  desc "macOS menu bar app for speech-to-text dictation into any application"
+  desc "Menu bar app for speech-to-text dictation into any application"
   homepage "https://github.com/jordiboehme/roger"
 
   livecheck do

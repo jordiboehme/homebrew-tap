@@ -4,7 +4,7 @@ cask "ahpushit" do
 
   url "https://github.com/jordiboehme/AhPushIt/releases/download/v#{version}/AhPushIt-#{version}.dmg"
   name "AhPushIt"
-  desc "macOS menu bar app that forwards notifications to external services"
+  desc "Menu bar app that forwards notifications to external services"
   homepage "https://github.com/jordiboehme/AhPushIt"
 
   livecheck do

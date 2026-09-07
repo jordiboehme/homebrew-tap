@@ -4,7 +4,7 @@ cask "gitcanary" do
 
   url "https://github.com/jordiboehme/GitCanary/releases/download/v#{version}/GitCanary-#{version}.dmg"
   name "GitCanary"
-  desc "macOS menu bar app that monitors git repos and provides AI-generated summaries of remote changes"
+  desc "Menu bar app that monitors git repos and summarizes remote changes with AI"
   homepage "https://github.com/jordiboehme/GitCanary"
 
   livecheck do
