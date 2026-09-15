@@ -1,13 +1,14 @@
 cask "epub-tailor-app" do
-  version "0.9.0"
+  version "0.10.0"
 
   on_arm do
-    sha256 "7aa05ed213a42fbfb64876de1aabae4db5a87d98b17e41906b60949a4ee51a22"
+    sha256 "c1082be8f1523200946dcc661b5f3cb37c1e7eabd54258395e4aef9d40decb06"
 
     url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/EPUB-Tailor-v#{version}-macos-arm64.dmg"
   end
+
   on_intel do
-    sha256 "dafda96ca3ec19585531df226e9ff2447d303aaf2689be7958ff29ec41fe9e6a"
+    sha256 "a826f0a4da8d1b20b100cdcc40c26b7cb073d7b047224b17684331003eac7297"
 
     url "https://github.com/jordiboehme/epub-tailor/releases/download/v#{version}/EPUB-Tailor-v#{version}-macos-intel.dmg"
   end
@@ -16,13 +17,8 @@ cask "epub-tailor-app" do
   desc "Clean, fix and tailor EPUB books to fit your e-reader"
   homepage "https://github.com/jordiboehme/epub-tailor"
 
-  livecheck do
-    url :url
-    strategy :github_latest
-  end
-
   auto_updates true
-  depends_on :macos
+  depends_on macos: :catalina
 
   app "EPUB Tailor.app"
 
