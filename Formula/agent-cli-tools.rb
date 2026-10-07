@@ -2,17 +2,17 @@ class AgentCliTools < Formula
   desc "The missing CLI commands for agent harnesses"
   homepage "https://github.com/jordiboehme/agent-cli-tools"
   license "MIT"
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_arm do
       url "https://github.com/jordiboehme/agent-cli-tools/releases/download/v#{version}/agent-cli-tools-v#{version}-macos-arm64.tar.gz"
-      sha256 "3bebdb9af714b322421473dcacd84a645e7bf78075eda8a76d839a88cbfd9891"
+      sha256 "ccd965a2fb2cde5e1a246bb896e6bcaf2b0b2382ee1a040486630e3ce5bbd5de"
     end
 
     on_intel do
       url "https://github.com/jordiboehme/agent-cli-tools/releases/download/v#{version}/agent-cli-tools-v#{version}-macos-intel.tar.gz"
-      sha256 "79d8914a5b798840ddea3e75e05ad793051d7fd747accd51ec35761c7b391fc3"
+      sha256 "47a0570b497f6924167b776a1bf07ade2e158003ee7d9ab9ac7c520324908807"
     end
   end
 
