@@ -16,11 +16,6 @@ cask "gitcanary" do
 
   app "GitCanary.app"
 
-  postflight_steps do
-    run "/bin/sleep", args: ["1"]
-    run "/usr/bin/open", args: ["-g", "{{appdir}}/GitCanary.app"]
-  end
-
   uninstall quit:   "com.jordiboehme.GitCanary",
             signal: ["TERM", "com.jordiboehme.GitCanary"]
 

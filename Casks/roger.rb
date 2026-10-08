@@ -17,11 +17,6 @@ cask "roger" do
 
   app "Roger.app"
 
-  postflight_steps do
-    run "/bin/sleep", args: ["1"]
-    run "/usr/bin/open", args: ["-g", "{{appdir}}/Roger.app"]
-  end
-
   uninstall quit:   "com.jordiboehme.roger",
             signal: ["TERM", "com.jordiboehme.roger"]
 
