@@ -1,6 +1,6 @@
 cask "roger" do
-  version "0.21.0"
-  sha256 "324820457a7683990c1e81c03c33890c20e42ac768c10730586e59d2a32e1c84"
+  version "0.22.0"
+  sha256 "cd334c6ed693055ec6812cb2bdb73e12ae34554e62fc898e42b6a6175c9269bf"
 
   url "https://github.com/jordiboehme/roger/releases/download/v#{version}/Roger-#{version}.dmg"
   name "Roger"
@@ -13,7 +13,7 @@ cask "roger" do
   end
 
   depends_on arch:  :arm64
-  depends_on macos: :sonoma
+  depends_on macos: :sequoia
 
   app "Roger.app"
 
