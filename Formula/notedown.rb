@@ -1,8 +1,8 @@
 class Notedown < Formula
   desc "Turn Supernote handwritten notes into Markdown"
   homepage "https://github.com/jordiboehme/notedown"
-  url "https://github.com/jordiboehme/notedown/releases/download/v0.1.1/notedown-v0.1.1-macos.tar.gz"
-  sha256 "d7fddf98b4814fdf06abe40d3850d5017c9578e905e819b2977ded71daebcfbd"
+  url "https://github.com/jordiboehme/notedown/releases/download/v0.2.0/notedown-v0.2.0-macos.tar.gz"
+  sha256 "05a72dad2d7ee3c912a16d1e3201db1c3b59c3c472e400b8a70b33d0e01bbe38"
   license "AGPL-3.0-or-later"
 
   depends_on arch: :arm64

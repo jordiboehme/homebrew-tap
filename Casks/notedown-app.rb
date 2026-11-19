@@ -1,6 +1,6 @@
 cask "notedown-app" do
-  version "0.1.1"
-  sha256 "b51ace234a1398e65cce9b050e89d69b6a980cfaf9fba97104dda3bf6f964ea1"
+  version "0.2.0"
+  sha256 "6cf09b95c07b54f31672fec3f773c0d83c753dcc44f5a860b007c271bac79f04"
 
   url "https://github.com/jordiboehme/notedown/releases/download/v#{version}/notedown-app-v#{version}-macos.dmg"
   name "Notedown"
